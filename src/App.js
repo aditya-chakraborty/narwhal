@@ -67,7 +67,7 @@ function App() {
   
   //teams as per search query
   const updateSearchResults = (query) => {
-    const result = teams.filter(team => team.name.toLowerCase().includes(query))
+    const result = teams.filter(team => team.name.toLowerCase().includes(query.toLowerCase()))
     setFilteredTeams(result)
   }
 
